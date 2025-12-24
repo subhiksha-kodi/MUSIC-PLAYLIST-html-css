@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SonicStream | Your Playlist</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-wave-square"></i> SONIC
+            </div>
+            <nav class="menu">
+                <p class="menu-label">Menu</p>
+                <ul>
+                    <li class="active"><i class="fa-solid fa-house"></i> Home</li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i> Search</li>
+                    <li><i class="fa-solid fa-compact-disc"></i> Library</li>
+                </ul>
+            </nav>
+            <nav class="menu">
+                <p class="menu-label">Your Collection</p>
+                <ul>
+                    <li><i class="fa-solid fa-heart"></i> Liked Songs</li>
+                    <li><i class="fa-solid fa-list-ul"></i> AI Mix 2024</li>
+                    <li><i class="fa-solid fa-radio"></i> Radio</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header/Hero -->
+            <header class="playlist-header">
+                <div class="playlist-img">
+                    <i class="fa-solid fa-music"></i>
+                </div>
+                <div class="playlist-details">
+                    <p class="tag">Public Playlist</p>
+                    <h1>Midnight Echoes</h1>
+                    <p class="description">The best of Lo-fi and Generative AI beats to keep you focused. <span>64 songs, 3 hr 45 min</span></p>
+                    <div class="actions">
+                        <button class="play-btn"><i class="fa-solid fa-play"></i> Play</button>
+                        <button class="outline-btn"><i class="fa-solid fa-heart"></i></button>
+                        <button class="outline-btn"><i class="fa-solid fa-ellipsis"></i></button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Song List -->
+            <section class="song-list">
+                <div class="list-header">
+                    <span class="col-index">#</span>
+                    <span class="col-title">Title</span>
+                    <span class="col-album">Album</span>
+                    <span class="col-date">Date Added</span>
+                    <span class="col-time"><i class="fa-regular fa-clock"></i></span>
+                </div>
+
+                <!-- Song Row 1 -->
+                <div class="song-row">
+                    <span class="col-index">1</span>
+                    <div class="col-title song-info">
+                        <div class="song-thumb"></div>
+                        <div>
+                            <p class="song-name">Neural Network Lullaby</p>
+                            <p class="artist-name">Digital Dreamer</p>
+                        </div>
+                    </div>
+                    <span class="col-album">Synapse Vol. 1</span>
+                    <span class="col-date">2 days ago</span>
+                    <span class="col-time">3:45</span>
+                </div>
+
+                <!-- Song Row 2 -->
+                <div class="song-row active-song">
+                    <span class="col-index"><i class="fa-solid fa-volume-high"></i></span>
+                    <div class="col-title song-info">
+                        <div class="song-thumb" style="background: #00d4ff;"></div>
+                        <div>
+                            <p class="song-name">Midnight GPT</p>
+                            <p class="artist-name">Velvet Midnight</p>
+                        </div>
+                    </div>
+                    <span class="col-album">Generative Vibes</span>
+                    <span class="col-date">5 days ago</span>
+                    <span class="col-time">4:12</span>
+                </div>
+
+                <!-- Song Row 3 -->
+                <div class="song-row">
+                    <span class="col-index">3</span>
+                    <div class="col-title song-info">
+                        <div class="song-thumb" style="background: #ff007a;"></div>
+                        <div>
+                            <p class="song-name">Silicon Soul</p>
+                            <p class="artist-name">Machine Heart</p>
+                        </div>
+                    </div>
+                    <span class="col-album">Logic Gate</span>
+                    <span class="col-date">1 week ago</span>
+                    <span class="col-time">2:58</span>
+                </div>
+            </section>
+        </main>
+
+        <!-- Bottom Player Bar -->
+        <footer class="player-bar">
+            <!-- Left Section -->
+            <div class="footer-section now-playing">
+                <div class="current-thumb"></div>
+                <div class="current-info">
+                    <p class="current-name">Midnight GPT</p>
+                    <p class="current-artist">Subhiksha Beats</p>
+                </div>
+                <i class="fa-regular fa-heart fav-icon"></i>
+            </div>
+
+            <!-- Center Section (Aligned) -->
+            <div class="footer-section player-controls">
+                <div class="control-btns">
+                    <i class="fa-solid fa-shuffle ctrl-icon"></i>
+                    <i class="fa-solid fa-backward-step ctrl-icon"></i>
+                    <div class="play-pause">
+                        <i class="fa-solid fa-pause"></i>
+                    </div>
+                    <i class="fa-solid fa-forward-step ctrl-icon"></i>
+                    <i class="fa-solid fa-repeat ctrl-icon"></i>
+                </div>
+                <div class="progress-container">
+                    <span>1:24</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <span>4:12</span>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="footer-section volume-controls">
+                <i class="fa-solid fa-microphone"></i>
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="volume-bar">
+                    <div class="volume-fill"></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
